@@ -26,10 +26,10 @@ headers = {
    
 }
 if(result['status']):
-    for i in range(60):
+    for i in range(60):#访问次数
         res=s.get(url=url2,headers=headers)
         print(f'第{i+1}次访问')
         print(res.text)
-        time.sleep(5)
+        time.sleep(5)#暂停时间
 else:
     print("账号密码错误")
